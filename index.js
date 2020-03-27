@@ -39,7 +39,8 @@ const renderImage = imageUrl => {
 }
 
 const getMessage = () => {
-    fetch('http://algakovic.eu.pythonanywhere.com/')
+    // fetch('http://algakovic.eu.pythonanywhere.com/')
+    fetch('https://api.github.com/users/Gingertonic')
         .then(r => r.json()).then(console.log)
 }
 
