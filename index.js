@@ -1,6 +1,7 @@
 const textInput = document.querySelector('#meme-text')
 const memeForm = document.querySelector("#meme-text-form")
 const currentMeme = document.querySelector('img')
+const button = document.querySelector('#btn')
 
 const submitMeme = e => {
     e.preventDefault();
@@ -37,4 +38,10 @@ const renderImage = imageUrl => {
     currentMeme.src = imageUrl
 }
 
+const getMessage = () => {
+    fetch('http://algakovic.eu.pythonanywhere.com/')
+        .then(r => r.json()).then(console.log)
+}
+
 memeForm.onsubmit = submitMeme
+button.onclick = getMessage
