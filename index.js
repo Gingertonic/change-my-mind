@@ -8,8 +8,8 @@ const submitMeme = e => {
         template_id: 129242436,
         text0: textInput.value,
         text1: '',
-        username: IMGFLIP_USERNAME,
-        password: IMGFLIP_PASSWORD
+        username: 'Gingertonic',
+        password: 'password'
     }
 
     const formData = createFormData(params)
